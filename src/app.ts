@@ -44,12 +44,16 @@ class Customer{
         this._firstName = firstName;
     }
     set LastName(lastName:string){
-        if(lastName == null){
+        if(lastName =='' || null){
              throw new Error('lastName should be empty!');
         }
         this._lastName = lastName;
     }
-
+    fullname (){
+        return 'the full name is ' + this._firstName + ' ' + this._lastName;
+    }
 }
-let c = new Customer('', 'wang');
+let c = new Customer('ann', 'wang');
+c.FirstName = '';
 console.log(c.FirstName);
+console.log(c.fullname());
