@@ -6,7 +6,7 @@
   "scripts": {
     "lite": "lite-server",
     "tsc:w": "tsc -w",
-    "start": "concurrently \"npm run lite\" \"npm run tec:w\" " 
+    "start": "concurrently \"npm run lite\" \"npm run tsc:w\" " 
   },
   "keywords": [],
   "author": "",
